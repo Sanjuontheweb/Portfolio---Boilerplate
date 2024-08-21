@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel = "stylesheet" href="projects.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>module.exports = {
+    theme: {
+      fontFamily: {
+        'Jersey' : ["Jersey 10", "sans-serif"],
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Change it according to your needs -->
+  <div class="scroll-watcher"></div>
+  <div class="header-top">
+    <div class="left-header-section">
+      <a href = "../index.html"><img src="{logo}" class="logo-header-image" /></a>
+      <a href = "../index.html"><img src="{logo text}" class="logo-header-title" /></a>
+    </div>
+
+    <div class="right-header-section">
+      <a onclick="
+        window.location.href = '../About/About.html';
+        "><button class = "right-header-btn">About</button></a>
+    </div>
+  </div>
+
+  <section class="heading-sec">
+    <div class="bg-image">
+      <h1 class="heading">Projects</h1>
+    </div>
+  </section>
+
+<!-- Customize the numbers as needed -->
+  <section class = "md:p-[100px] sm:p-[70px] p-[45px]">
+    <div class="flex sm:flex-row flex-col-reverse items-center justify-evenly md:mb-[100px] sm:mb-[75px] mb-[25px]">
+      <div class="p-[15px] md:pl-[20px] pl-[17px] pl-[14px] flex flex-col sm:items-left items-center projects-text">
+        <h3 class = "text-[13px] text-[#019468] font-['Jersey'] pb-[2px]">Featured project</h3>
+        <h1 class = "text-white md:text-[32px] sm:text-[28px] text-[22px] pb-[5px] font-semibold">Title</h1>
+        <p class = "text-[#bbbcbd] md:text-[15px] sm:text-[13px] text-[11px] bg-[#00021a] sm:p-[10px] p-[8px] font-medium">paragragh</p>
+      </div>
+      <div class="md:w-[600px] sm:w-[400px] w-[300px] sm:mx-[0px] mx-[10px]">
+      <img src="{img}" alt="image" class="w-[100%] rounded-[4px] projects-img">
+      </div>
+    </div>
+
+    <div class="flex sm:flex-row flex-col-reverse items-center justify-evenly">
+      <div class="md:w-[600px] sm:w-[400px] w-[300px] sm:mx-[0px] mx-[10px]">
+        <img src="{img}" alt="image" class="w-[100%] rounded-[4px] projects-text">
+        </div>
+      <div class="p-[15px] md:pl-[20px] pl-[17px] pl-[14px] flex flex-col sm:items-left items-center projects-img">
+        <h3 class = "text-[13px] text-[#019468] font-['Jersey'] pb-[2px]">Featured project</h3>
+        <h1 class = "text-white md:text-[32px] sm:text-[28px] text-[22px] pb-[5px] font-semibold">Title</h1>
+        <p class = "text-[#bbbcbd] md:text-[15px] sm:text-[13px] text-[11px] bg-[#00021a] sm:p-[10px] p-[8px] font-medium">paragragh</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-container">
+    <div class="footer-left">
+      <p class="footer-left-para">{paragraph about yourself}</p>
+    </div>
+    <div class="footer-right">
+      <div class="footer-right-links">
+        <a href="../About/About.html" class="footer-right-link">About</a>
+        <a href="../Opinions/opinions.html" class="footer-right-link-2">Opinions</a>
+        <a href="../contact.html" class="footer-right-link-3">Contact</a>
+      </div>
+      <div class="footer-right-get-in-touch">
+        <p class="footer-right-address">{address/something}</p>
+        <p class="footer-right-email">E-mail:{}</p>
+        <p class="footer-right-phone">Phone:{}</p>
+        <p class="footer-right-name">{Your Sign/Name}</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
